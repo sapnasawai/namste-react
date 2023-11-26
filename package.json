@@ -1,0 +1,25 @@
+{
+  "name": "namste-react",
+  "version": "1.0.0",
+  "description": "This is an amazing react course project.",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-personal:sapnasawai/namste-react.git"
+  },
+  "author": "Sapna",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
