@@ -23,3 +23,18 @@
 .searchBar{
     margin-right: 20;
 }
+.allCards{
+    flex:1;
+    flex-direction: row;
+    border: 1px solid brown;
+}
+.cardContainer{
+    flex:1;
+    border: 1px solid black;
+    width: 200;
+    height: 320;
+    
+}
+.restroImage{
+    width: 100%;
+}
