@@ -24,16 +24,20 @@
     margin-right: 20;
 }
 .allCards{
-    flex:1;
-    flex-direction: row;
-    border: 1px solid brown;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* border: 1px solid brown; */
+    /* justify-content: space-between; */
+    margin: 20;
 }
+
 .cardContainer{
-    flex:1;
     border: 1px solid black;
     width: 200;
     height: 320;
-    
+    margin: 10;
+
 }
 .restroImage{
     width: 100%;
