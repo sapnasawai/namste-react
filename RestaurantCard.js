@@ -1,13 +1,13 @@
 
     const RestaurantCard = (props) => {
-      // {avgRating, deliveryTime, cuisines} = props
+     const {cloudinaryImageId, name, avgRating, sla, cuisines} = props.resList;
     return(
         <div className="cardContainer">
-          {/* <img className="restroImage" alt="res-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/+{props.cloudinaryImageId}"}/>           */}
-          <h4>{props.name}</h4>
-          <h4>{props.avgRating}stars</h4>
-          <h4>{props.deliveryTime}</h4>
-          <h4>{props.cuisines}</h4>
+          <img className="restroImage" alt="res-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+`${cloudinaryImageId}`}/>          
+          <h4>{name}</h4>
+          <h4>{avgRating}stars</h4>
+          <h4>{sla.deliveryTime}</h4>
+          <h4>{cuisines.join(', ')}</h4>
         
         </div>
     )

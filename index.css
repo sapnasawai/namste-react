@@ -4,7 +4,7 @@
     justify-content: space-between;
     border: 1px solid black;
 }
-.image{
+image{
    
     width: 130;
 }
@@ -26,6 +26,7 @@
 .allCards{
     display: flex;
     flex-wrap: wrap;
+    /* padding: 10; */
     /* flex-direction: row; */
     /* border: 1px solid brown; */
     /* justify-content: space-between; */
@@ -34,11 +35,14 @@
 
 .cardContainer{
     border: 1px solid black;
-    width: 200;
-    height: 320;
+  
+    width: 200; 
+     /* height: 400; */
     margin: 10;
+    padding: 10;
 
 }
 .restroImage{
     width: 100%;
+    height: 50%;
 }
