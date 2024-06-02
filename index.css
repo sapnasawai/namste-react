@@ -18,7 +18,7 @@ image{
 .searchContainer{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .searchBar{
     margin-right: 20;
@@ -30,19 +30,40 @@ image{
     /* flex-direction: row; */
     /* border: 1px solid brown; */
     /* justify-content: space-between; */
-    margin: 20;
+    margin: 10;
 }
 
 .cardContainer{
     border: 1px solid black;
-  
+    background-color: #f0f0f0;
     width: 200; 
      /* height: 400; */
-    margin: 10;
+    margin: 5;
     padding: 10;
 
 }
 .restroImage{
     width: 100%;
     height: 50%;
+}
+.shimmer{
+    border: 1px solid black;
+  background-color: #f0f0f0;
+    width: 200; 
+     height: 400;
+    margin: 5;
+    padding: 10;
+}
+
+.shimmer-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10;
+}
+.headerButtonContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   margin-top: 15;
+   
 }

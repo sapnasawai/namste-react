@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import RestaurantCard from "../../RestaurantCard";
+import RestaurantCard from "./RestaurantCard";
 import Search from "../../Search";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
   const [listOfRestaurant, setListOfRestaurant] = useState([]);
@@ -20,12 +21,21 @@ const Body = () => {
     setListOfRestaurant(
       res?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-    setFilteredListOfRestaurant(res?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    setFilteredListOfRestaurant(
+      res?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
   };
 
+  if(filteredListOfRestaurant.length === 0){
+    return <Shimmer/>
+  }
+
+
   return (
+    
     <>
-      <div className="searchContainer">
+     <div className="headerButtonContainer">
+     <div className="searchContainer">
         <div className="searchBar">
           <input
             type="text"
@@ -37,15 +47,28 @@ const Body = () => {
         </div>
         <button
           onClick={() => {
-            console.log("listOfRestaurant",listOfRestaurant)
+            console.log("listOfRestaurant", listOfRestaurant);
             const filterList = listOfRestaurant.filter((res) =>
               res.info.name.toLowerCase().includes(searchText.toLowerCase())
             );
-            setFilteredListOfRestaurant(filterList)
+            setFilteredListOfRestaurant(filterList);
           }}
         >
           Search
         </button>
+      </div>
+      <div className="filterButton" style={{marginLeft:30}}>
+        <button
+          onClick={() => {
+            const filterList = listOfRestaurant.filter(
+              (res) => res.info.avgRating >= 4
+            );
+            setFilteredListOfRestaurant(filterList);
+          }}
+        >
+          Filter Top Restaurant
+        </button>
+        </div> 
       </div>
       <div className="allCards">
         {filteredListOfRestaurant.map((restaurant) => (
