@@ -18,7 +18,6 @@ image{
 .searchContainer{
     display: flex;
     flex-direction: row;
-    /* margin-top: 20px; */
 }
 .searchBar{
     margin-right: 20;
@@ -26,18 +25,12 @@ image{
 .allCards{
     display: flex;
     flex-wrap: wrap;
-    /* padding: 10; */
-    /* flex-direction: row; */
-    /* border: 1px solid brown; */
-    /* justify-content: space-between; */
     margin: 10;
 }
-
 .cardContainer{
     border: 1px solid black;
     background-color: #f0f0f0;
-    width: 200; 
-     /* height: 400; */
+    width: 200;
     margin: 5;
     padding: 10;
 
@@ -48,9 +41,9 @@ image{
 }
 .shimmer{
     border: 1px solid black;
-  background-color: #f0f0f0;
+    background-color: #f0f0f0;
     width: 200; 
-     height: 400;
+    height: 400;
     margin: 5;
     padding: 10;
 }

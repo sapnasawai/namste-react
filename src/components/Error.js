@@ -8,7 +8,7 @@ const Error = () => {
       <h1>OOOPS......!</h1>
       <h2>Something went wrong</h2>
       <h2>
-        {err.status} {err.error.message}
+        {err.status}
       </h2>
     </>
   );
