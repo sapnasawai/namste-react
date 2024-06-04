@@ -1,3 +1,4 @@
+import { RESTAURANT_IMAGES_API_URL } from "../utils/constants";
 import RestaurantMenu from "./RestaurantMenu";
 
 const RestaurantCard = (props) => {
@@ -7,10 +8,7 @@ const RestaurantCard = (props) => {
       <img
         className="restroImage"
         alt="res-logo"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          `${cloudinaryImageId}`
-        }
+        src={RESTAURANT_IMAGES_API_URL + `${cloudinaryImageId}`}
       />
       <h4>{name}</h4>
       <h4>{avgRating}stars</h4>

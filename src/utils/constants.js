@@ -3,3 +3,5 @@ export const LOGO_URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT
 export const RESTAURANT_API_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.94128110319547&lng=77.75196057724607&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
 
 export const RESTAURANT_MENU_API_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=20.94128110319547&lng=77.75196057724607&restaurantId=300767&catalog_qa=undefined"
+
+export const RESTAURANT_IMAGES_API_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"

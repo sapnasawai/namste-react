@@ -60,3 +60,7 @@ image{
    margin-top: 15;
    
 }
+.link-card{
+    text-decoration: none;
+    color: black;
+}

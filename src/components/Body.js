@@ -3,6 +3,7 @@ import RestaurantCard from "./RestaurantCard";
 import Search from "./Search";
 import Shimmer from "./Shimmer";
 import { RESTAURANT_API_URL } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [listOfRestaurant, setListOfRestaurant] = useState([]);
@@ -46,7 +47,6 @@ const Body = () => {
         </div>
         <button
           onClick={() => {
-            console.log("listOfRestaurant", listOfRestaurant);
             const filterList = listOfRestaurant.filter((res) =>
               res.info.name.toLowerCase().includes(searchText.toLowerCase())
             );
@@ -71,7 +71,7 @@ const Body = () => {
       </div>
       <div className="allCards">
         {filteredListOfRestaurant.map((restaurant) => (
-          <RestaurantCard key={restaurant.info.id} resList={restaurant.info} />
+          <Link to={"/restaurant/"+restaurant.info.id} className="link-card"><RestaurantCard key={restaurant.info.id} resList={restaurant.info} /></Link>
         ))}
       </div>
     </>
