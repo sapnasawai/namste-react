@@ -1,4 +1,8 @@
-.headerContainer{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .headerContainer{
    display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,4 +67,4 @@ image{
 .link-card{
     text-decoration: none;
     color: black;
-}
+} */
